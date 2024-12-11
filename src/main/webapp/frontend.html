@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to LOGIN / REGISTRATION</title>
+    <link rel="stylesheet" type="text/css" href="Css.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+</head>
+<body>
+
+<!-- Main Content Section -->
+<div class="section">
+    <h1>Welcome to all of u the Guys! 🎉</h1>
+    <p>Welcome to a place where passionate learners and teachers come together! This project 💻 has been passionately 💖 crafted by <span class="highlight">@mrMahetabpatel</span> with deeply respect to all the Guidelines. 🎓</p>
+</div>
+
+<!-- Technologies Section -->
+<div class="section tech-stack">
+    <h2>🔴 Technologies Used:</h2>
+    <p><span class="emoji">💻</span> <span class="highlight">Frontend:</span> HTML, CSS,JS(GSAP)</p>
+    <br>
+    <p><span class="emoji">🖥️</span> <span class="highlight">Backend:</span> JSP, Servlet, JDBC</p>
+</div>
+
+<!-- Explore and Connect Section -->
+<div class="section">
+    <p>Explore, learn, and connect with like-minded individuals. 🚀</p>
+    <p>Feel free to 👋 <strong>Login</strong> or 🚀 <strong>Register</strong> to get started!</p>
+</div>
+
+<!-- Action Buttons Section -->
+<div class="buttons">
+    <!-- Wrap the button with an anchor tag -->
+    <a href="login.jsp">
+        <button class="btn">Login <span class="emoji">🔑</span></button>
+    </a>
+
+    <a href="register.jsp">
+        <button class="btn">Register <span class="emoji">📝</span></button>
+    </a>
+</div>
+<script>
+    // Animate the heading
+    gsap.from("h1", {
+        duration: 1.5,
+        y: -50,
+        opacity: 0,
+        ease: "bounce.out"
+    });
+
+    // Animate the paragraphs
+    gsap.from("p", {
+        duration: 1,
+        x: -100,
+        opacity: 0,
+        stagger: 0.3, // Stagger the animations for each paragraph
+        ease: "power2.out"
+    });
+
+    // Animate the buttons
+    gsap.from(".btn", {
+        duration: 0.8,
+        scale: 0,
+        opacity: 0,
+        stagger: 0.2,
+        ease: "elastic.out(1, 0.5)"
+    });
+
+    // Highlight text animations
+    gsap.from(".highlight", {
+        duration: 1,
+        rotation: 360,
+        opacity: 0,
+        scale: 0.8,
+        ease: "back.out(1.7)"
+    });
+
+    // Continuous background color pulse for tech-stack
+    gsap.to(".tech-stack", {
+        duration: 2,
+        backgroundColor: "transparent",
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut"
+    });
+</script>
+
+</body>
+</html>

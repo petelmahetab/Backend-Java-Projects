@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+       background-image: url('./imges/Home.jpg');
+                   background-size: cover;
+                   background-position: center center;
+                   background-attachment: fixed;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+h1 {
+    font-size: 3.5em;
+    color: #3b5998;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.4;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.tech-stack {
+    display: inline-block;
+    padding: 10px;
+
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tech-stack h2 {
+    font-size: 1.5em;
+    color: #2b6cb0;
+}
+
+.buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Added spacing between buttons */
+}
+
+.btn {
+    padding: 8px 20px; /* Reduced padding */
+    font-size: 0.9em; /* Reduced font size */
+    background-color: #2b6cb0;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: green;
+    color: white;
+}
+
+.emoji {
+    font-size: 1.2em; /* Reduced emoji size */
+    margin-right: 5px;
+}
+
+.section {
+    margin-bottom: 15px; /* Reduced spacing between sections */
+}
+
+.highlight {
+    font-weight: bold;
+    color: #2b6cb0;
+}

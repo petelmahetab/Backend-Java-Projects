@@ -1,0 +1,98 @@
+/*This file Styling Register Page*/
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('./imges/second.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    opacity:1;
+    color: #fff; /* Text color for contrast on dark backgrounds */
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 50px;
+    font-weight: 600;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color:transparent; /* Semi-transparent white background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: black;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color:#5C6BC0;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color:#1A237E;
+}
+
+p {
+    text-align: center;
+    font-size: 1.1em;
+    color: #fff;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 2em;
+    }
+    form {
+        padding: 20px;
+    }
+    button {
+        font-size: 1em;
+    }
+}
